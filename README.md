@@ -43,8 +43,6 @@ Application available at `http://localhost:3000`
 ---
 
 
----
-
 ## Ngrok Setup
 
 1. **Create an account and download Ngrok**
@@ -72,6 +70,7 @@ ngrok http --url=<YOUR_STATIC_URL> 8747
 6. Copy the **Signing Secret** provided
 
 
+---
 ## Project Structure
 
 ```
