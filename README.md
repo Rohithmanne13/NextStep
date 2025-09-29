@@ -42,6 +42,36 @@ Application available at `http://localhost:3000`
 
 ---
 
+
+---
+
+## Ngrok Setup
+
+1. **Create an account and download Ngrok**
+2. Open CMD and run the following commands (Get the credentials from website):
+
+```bash
+ngrok config add-authtoken <YOUR_AUTH_TOKEN>
+```
+
+3. Choose the Static Domain and run the command:
+
+```bash
+ngrok http --url=<YOUR_STATIC_URL> 8747
+```
+
+---
+
+## Clerk Setup
+
+1. **Create an account on Clerk**
+2. Create a new application with email and Google enabled
+3. Copy and store the **PUBLIC** and **SECRET** key
+4. Go to **Configure > Webhooks**
+5. Add a new endpoint with the Ngrok static URL, subscribe to user events, and create it
+6. Copy the **Signing Secret** provided
+
+
 ## Project Structure
 
 ```
@@ -190,3 +220,4 @@ Application available at `http://localhost:3000`
 **Challenges:** Data security (role-based access), user adoption (official channel mandate), sustainability (premium features)
 
 ---
+
